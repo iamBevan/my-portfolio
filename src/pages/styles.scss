@@ -1,0 +1,52 @@
+h1 {
+    margin: 0;
+}
+
+.about-and-contact {
+	padding: 60px 0 0 0;
+    width: 670px;
+    display: flex;
+    margin: auto;
+
+    .about {
+        width: 70%;
+        height: 400px;
+    }
+
+    .contact {
+        width: 30%;
+        height: 400px;
+    }
+}
+
+
+.intro-front {
+	height: 330px;
+	max-height: 720px;
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 32px;
+	background: #f5f8fa;
+	color: #3A4145;
+	text-align: center;
+	font-size: 1rem;
+	border-top: 1px solid rgba(0,0,0,.125);
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.portfolio-container {
+	.portfolio-heading {
+		height: 210px;
+		position: relative;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 32px;
+		background: #f5f8fa;
+		color: #3A4145;
+		text-align: center;
+		font-size: 1rem;
+		border-top: 1px solid rgba(0,0,0,.125);
+		border-bottom: 1px solid rgba(0,0,0,.125);
+	}
+}
