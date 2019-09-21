@@ -10,7 +10,7 @@ import Title from "../../components/Title";
 
 import { blogTitleStyle } from './index'
 
-const UnitTestCode = () => {
+const unitTestCode = () => {
     const codeString = `
     import { Expect, Test, TestFixture } from 'alsatian';
 
@@ -75,11 +75,11 @@ const BlogPost1 = () => (
                 }}>
                     <a href="https://stupefied-knuth-2bd1f1.netlify.com/"><b>VIEW DEMO</b></a>
                 </div>
-                <img
+                {/* <img
                     alt=""
                     style={{ margin: 0, fontStyle: "italic", fontSize: "18px" }}
                     src="https://via.placeholder.com/960x500"
-                />
+                /> */}
                 <div style={{
                     fontStyle: "italic",
                     fontSize: "18px",
@@ -148,7 +148,7 @@ const BlogPost1 = () => (
                 To start testing, I used the following setup:
     
         </p>
-            {UnitTestCode()}
+            {unitTestCode()}
             <p>With that saved, the test can be ran as follows:</p>
             <pre style={{ background: '#404040', color: '#fff' }}>
                 <code>
@@ -165,7 +165,7 @@ const BlogPost1 = () => (
                 In this post I aim to just give a brief look at some of the choices I made when setting up my project, and to give some basic examples.
                 I will take a look at Unit Testing with builders and using React Router with Typescript in my next posts.
     
-        </p>
+            </p>
             <br /><br />
 
             <Link to="/">Go back to the homepage</Link>
