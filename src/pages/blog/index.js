@@ -10,12 +10,12 @@ import OuterLayout from "../../components/OuterLayout"
 
 export const blogTitleStyle = {
 	height: "150px",
-	background: "#466172",
+	background: "#1d3e53",
 	color: "#fff",
     marginBottom: 50,
 	paddingTop: 20,
-	borderTop: "1px solid rgba(0,0,0,.125)",
-	borderBottom: "1px solid rgba(0,0,0,.125)",
+	// borderTop: "1px solid rgba(0,0,0,.125)",
+	// borderBottom: "1px solid rgba(0,0,0,.125)",
 	textAlign: "center"
 }
 

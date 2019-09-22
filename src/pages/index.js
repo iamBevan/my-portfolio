@@ -13,13 +13,14 @@ import codesandbox from '../images/codesandbox.svg'
 
 const titleStyle = {
 	height: "330px",
-	background: "#466172",
+	background: "#1d3e53",
 	color: "#fff",
     marginBottom: 50,
 	paddingTop: 120,
-	// borderTop: "1px solid rgba(0,0,0,.125)",
-	// borderBottom: "1px solid rgba(0,0,0,.125)",
-	textAlign: "center"
+	// borderTop: "2px solid rgba(0,0,0,.125)",
+	// borderBottom: "2px solid rgba(0,0,0,.125)",
+	textAlign: "center",
+	// fontFamily: "open sans"
 }
 
 const IndexPage = () => (
@@ -29,8 +30,8 @@ const IndexPage = () => (
 			{/* <h1><span>&#123;</span>KB<span>&#125;</span></h1> */}
 			{/* <img src={kb} style={{ width: '100px', height: '100px' }} /> */}
 			<h1>Kevin Bevan</h1>
-			<div style={{ padding: "0px 0 40px 0", fontStyle: "italic", fontSize: "18px" }}>
-				My description about being a frontend web developer
+			<div style={{ padding: "0px 0 0px 0", fontStyle: "italic", fontSize: "22px" }}>
+				Front-end Web Developer
 			</div>
 		</Title>
 		<div className="about-and-contact">

@@ -71,7 +71,7 @@ const IndexPage = () => (
 				</div>
 				<div className="project-description">
 					<h2>My Personal Site</h2>
-					<h3></h3>
+					<a href="https://kevinbevan.com/"><b>www.kevinbevan.com</b></a>
 					<p>
 						The website you are currently on was created with Gatsby and SASS; it's responsive and incredibly fast when using internal links. I've made use of GraphQL
 						and have reusable components for most things.
