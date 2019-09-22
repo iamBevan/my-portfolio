@@ -7,7 +7,9 @@ import OuterLayout from "../components/OuterLayout"
 import SEO from "../components/SEO"
 import Title from "../components/Title";
 
-import kb from '../images/kb.svg'
+import github from '../images/github.svg'
+import email from '../images/email.svg'
+import codesandbox from '../images/codesandbox.svg'
 
 const titleStyle = {
 	height: "330px",
@@ -35,16 +37,17 @@ const IndexPage = () => (
 			<div className="about">
 				<h3>About me</h3>
 				<p>
-					All my life I've been fascinated with computers, problem solving and mathematics.
+					I am a junior front-end web developer concentrating on React
 					<br />Web development has allowed me to pursue all of my interests as can been seen from my growing portfolio.
+					<br />In addition to my portfolio please check out my Blog and Codesandbox.
 
 				</p>
       		</div>
 			<div className="contact">
 				<h3>Contact</h3>
-				<p>Github</p>
-				<p>Email</p>
-				<p>Codepen</p>
+				<p><img src={github} />Github</p>
+				<p><img src={email} />Email</p>
+				<p><img src={codesandbox} />Codepen</p>
       		</div>
 		</div>
 
