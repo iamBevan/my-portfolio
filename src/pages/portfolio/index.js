@@ -12,6 +12,7 @@ import dota2 from '../../images/dota-2-app.svg';
 import awer from '../../images/ashley-williams-escape-room.svg';
 import ggc from '../../images/ggc-name-logo.svg';
 import gatsbyIcon from '../../images/gatsby-icon.png';
+import codesandbox from '../../images/codesandbox.svg';
 
 import { blogTitleStyle } from '../blog/index'
 
@@ -35,7 +36,7 @@ const IndexPage = () => (
 					<p>
 						My ongoing project using the <a href="https://docs.opendota.com/"><b>OpenDota API</b></a>. The app is somewhat of a clone of two popular 
 						Dota 2 statistics sites, <a href="https://www.dotabuff.com/"><b>DotaBuff</b></a> and <a href="https://www.opendota.com/players/87430370"><b>OpenDota</b></a>.
-						You can navigate using the menu to check a player's statistics, past matches, heros played and current rankings.
+						You can navigate using the menu to check a player's statistics, past matches, heroes played and current rankings.
 					</p>
 
 				</div>
@@ -45,7 +46,7 @@ const IndexPage = () => (
 					<img src={awer} />
 				</div>
 				<div className="project-description">
-					<h2>Ash Williams Escape Rooms</h2>
+					<h2>Ash Williams Escape Room</h2>
 					<a href="https://github.com/iamBevan/raspbian-express-react"><b>Github</b></a>
 					<p>
 						Freelance project in which I have written a full-stack using Node, Express, React and a Raspberry Pi.
@@ -72,6 +73,19 @@ const IndexPage = () => (
 				<div className="project-description">
 					<h2>My Personal Site</h2>
 					<a href="https://kevinbevan.com/"><b>www.kevinbevan.com</b></a>
+					<p>
+						The website you are currently on was created with Gatsby and SASS; it's responsive and incredibly fast when using internal links. I've made use of GraphQL
+						and have reusable components for most things.
+					</p>
+				</div>
+			</div>
+			<div className="project">
+				<div className="project-image">
+				<img src={codesandbox} />
+				</div>
+				<div className="project-description">
+					<h2>My CodeSandbox</h2>
+					<a href="https://codesandbox.io/u/iamBevan/sandboxes"><b>CodeSandbox</b></a>
 					<p>
 						The website you are currently on was created with Gatsby and SASS; it's responsive and incredibly fast when using internal links. I've made use of GraphQL
 						and have reusable components for most things.

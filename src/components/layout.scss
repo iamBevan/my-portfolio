@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
 html {
@@ -25,26 +24,7 @@ main,
 menu,
 nav,
 section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-progress {
-  vertical-align: baseline;
-}
-[hidden],
-template {
-  display: none;
-}
+
 a:link {
   text-decoration: none;
   color: #1d3e53;
@@ -162,6 +142,11 @@ button::-moz-focus-inner {
 [type="submit"]:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+footer {
+  padding: 25px 0 0 30px;
+  border-top: 1px solid #1d3e53;
+  height: 70px;
 }
 fieldset {
   border: 1px solid silver;
@@ -419,7 +404,7 @@ pre {
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  overflow: scroll;
+  overflow-x: scroll;
   word-wrap: normal;
   padding: 1.45rem;
 }

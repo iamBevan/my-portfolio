@@ -46,9 +46,10 @@ const IndexPage = () => (
       		</div>
 			<div className="contact">
 				<h3>Contact</h3>
-				<p><img src={github} />Github</p>
-				<p><img src={email} />Email</p>
-				<p><img src={codesandbox} />Codepen</p>
+				<img src={github} />
+				<p>Github</p>
+				<img src={email} />
+				<p>Email</p>
       		</div>
 		</div>
 
