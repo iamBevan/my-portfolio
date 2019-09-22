@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-import Layout from "../../components/Layout"
+import OuterLayout from "../../components/OuterLayout"
 import SEO from "../../components/SEO"
-import BlogLayout from "../../components/BlogLayout";
+import InnerLayout from "../../components/InnerLayout";
 import Title from "../../components/Title";
 
 import { blogTitleStyle } from './index'
@@ -195,14 +195,14 @@ const builderTests = () => {
 };
 
 const BlogPost2 = () => (
-    <Layout>
+    <OuterLayout>
         <Title titleStyle={blogTitleStyle}>
             <h1>Unit Testing with The Builder</h1>
             <div style={{ padding: "15px 0 40px 0", fontStyle: "italic", fontSize: "18px" }}>
                 A quick look at The Builder Pattern and my implementation of it
             </div>
         </Title>
-        <BlogLayout>
+        <InnerLayout>
             <SEO title="Builder Pattern" />
 
             <div style={{ marginTop: 50 }}>
@@ -278,12 +278,9 @@ const BlogPost2 = () => (
                 </p>
                 {builderTests()}
             </p>
-
-            
-
             {/* <Link to="/">Go back to the homepage</Link> */}
-        </BlogLayout>
-    </Layout>
+        </InnerLayout>
+    </OuterLayout>
 )
 
 export default BlogPost2

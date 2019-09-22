@@ -3,7 +3,7 @@ import React from "react"
 
 import './styles.scss';
 
-import Layout from "../components/Layout"
+import OuterLayout from "../components/OuterLayout"
 import SEO from "../components/SEO"
 import Title from "../components/Title";
 
@@ -11,21 +11,21 @@ import kb from '../images/kb.svg'
 
 const titleStyle = {
 	height: "330px",
-	background: "#1d3e53",
+	background: "#466172",
 	color: "#fff",
-    marginBotton: 50,
-	paddingTop: 50,
+    marginBottom: 50,
+	paddingTop: 120,
 	// borderTop: "1px solid rgba(0,0,0,.125)",
 	// borderBottom: "1px solid rgba(0,0,0,.125)",
 	textAlign: "center"
 }
 
 const IndexPage = () => (
-	<Layout>
+	<OuterLayout>
 		<SEO title="Home" />
 		<Title titleStyle={titleStyle}>
 			{/* <h1><span>&#123;</span>KB<span>&#125;</span></h1> */}
-			<img src={kb} style={{ width: '100px', height: '100px' }} />
+			{/* <img src={kb} style={{ width: '100px', height: '100px' }} /> */}
 			<h1>Kevin Bevan</h1>
 			<div style={{ padding: "0px 0 40px 0", fontStyle: "italic", fontSize: "18px" }}>
 				My description about being a frontend web developer
@@ -35,7 +35,9 @@ const IndexPage = () => (
 			<div className="about">
 				<h3>About me</h3>
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur aut odit aut fugit, sed quia consequuntur 
+					All my life I've been fascinated with computers, problem solving and mathematics.
+					<br />Web development has allowed me to pursue all of my interests as can been seen from my growing portfolio.
+
 				</p>
       		</div>
 			<div className="contact">
@@ -46,7 +48,7 @@ const IndexPage = () => (
       		</div>
 		</div>
 
-	</Layout>
+	</OuterLayout>
 )
 
 export default IndexPage

@@ -1,16 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import BlogLayout from "../../components/BlogLayout"
+import InnerLayout from "../../components/InnerLayout"
 import SEO from "../../components/SEO"
 
 import './styles.scss'
 import Title from "../../components/Title"
-import Layout from "../../components/Layout"
+import OuterLayout from "../../components/OuterLayout"
 
 export const blogTitleStyle = {
 	height: "150px",
-	background: "#1d3e53",
+	background: "#466172",
 	color: "#fff",
     marginBottom: 50,
 	paddingTop: 20,
@@ -20,7 +20,7 @@ export const blogTitleStyle = {
 }
 
 const IndexPage = () => (
-	<Layout>
+	<OuterLayout>
 		<SEO title="Home" />
 		<Title titleStyle={blogTitleStyle}>
 			<h1>Blog</h1>
@@ -28,8 +28,7 @@ const IndexPage = () => (
 				Welcome to my blog. Here you can follow my progress as a developer.
 			</div>
 		</Title>
-		<BlogLayout>
-			
+		<InnerLayout>
 			<div className="blog-post">
 				<div className="blog-date">July 26, 2019</div>
 				<div className="blog-post-heading"><Link to="/blog/BlogPost2">Unit Testing with The Builder</Link></div>
@@ -72,10 +71,10 @@ const IndexPage = () => (
 				<div className="blog-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 				<div className="blog-link"><Link to="/">Read more...</Link></div>
 			</div> */}
-		</BlogLayout>
+		</InnerLayout>
 
 		<Link to="/">Go back to the homepage</Link>
-	</Layout>
+	</OuterLayout>
 )
 
 export default IndexPage

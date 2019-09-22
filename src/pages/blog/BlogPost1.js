@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-import Layout from "../../components/Layout"
+import OuterLayout from "../../components/OuterLayout"
 import SEO from "../../components/SEO"
-import BlogLayout from "../../components/BlogLayout";
+import InnerLayout from "../../components/InnerLayout";
 import Title from "../../components/Title";
 
 import { blogTitleStyle } from './index'
@@ -57,14 +57,14 @@ const unitTestResult = () => {
 }
 
 const BlogPost1 = () => (
-    <Layout>
+    <OuterLayout>
         <Title titleStyle={blogTitleStyle}>
                 <h1>Dota API Project</h1>
                 <div style={{ padding: "0px 0 40px 0", fontStyle: "italic", fontSize: "18px" }}>
                     React, Typescript, React Semantic UI, Alsatian, Axios
                 </div>
             </Title>
-        <BlogLayout>
+        <InnerLayout>
             <SEO title="React Dota API Project" />
 
             <div>
@@ -169,8 +169,8 @@ const BlogPost1 = () => (
             <br /><br />
 
             <Link to="/">Go back to the homepage</Link>
-        </BlogLayout>
-    </Layout>
+        </InnerLayout>
+    </OuterLayout>
 )
 
 export default BlogPost1

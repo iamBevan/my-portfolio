@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-import Layout from "../../components/Layout"
+import OuterLayout from "../../components/OuterLayout"
 import SEO from "../../components/SEO"
 
 const recentMatchObject = () => {
@@ -93,7 +93,7 @@ const recentMatchFunctions = () => {
 };
 
 const DotaProjectOverview = () => (
-    <Layout>
+    <OuterLayout>
         <SEO title="React Dota API Project" />
 
         <div>
@@ -108,7 +108,7 @@ const DotaProjectOverview = () => (
         </div>
 
         <Link to="/">Go back to the homepage</Link>
-    </Layout>
+    </OuterLayout>
 )
 
 export default DotaProjectOverview;
