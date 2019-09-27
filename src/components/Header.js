@@ -8,7 +8,7 @@ const Header = () => (
 		<nav>
 			<Link to="/blog">Blog</Link>
 			<Link to="/portfolio">Portfolio</Link>
-			<Link to="/cv">CV</Link>
+			<a target="_blank" href="https://drive.google.com/file/d/1UAeCLgCmirERpqBmjC-S7S8yeL4Ubyi-/view">CV</a>
 		</nav>
 	</div>
 )

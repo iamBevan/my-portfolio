@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import './styles.scss';
 
@@ -19,17 +19,27 @@ const IndexPage = () => (
 			<h2>Front-end Web Developer</h2>
 			<div className="icons">
 				<section>
-					<img alt="" src={portfolio} />
-					<h3>Portfolio</h3>
+					<Link to="/portfolio">
+						<img alt="" src={portfolio} />
+						<h3>Portfolio</h3>
+					</Link>
 				</section>
+				
+					<section>
+						<a href="https://github.com/iamBevan/">
+							<img alt="" src={github} />
+							<h3>Github</h3>
+						</a>
+					</section>
+				
+	
 				<section>
-					<img alt="" src={github} />
-					<h3>Github</h3>
+					<a href="https://codesandbox.io/u/iamBevan/sandboxes">
+						<img alt="" src={codesandbox} />
+						<h3>CodeSandbox</h3>
+					</a>
 				</section>
-				<section>
-					<img alt="" src={codesandbox} />
-					<h3>CodeSandbox</h3>
-				</section>
+				
 			</div>
 		</div>
 		<div className="home-container">
