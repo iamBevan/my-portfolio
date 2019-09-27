@@ -19,15 +19,15 @@ const IndexPage = () => (
 			<h2>Front-end Web Developer</h2>
 			<div className="icons">
 				<section>
-					<img src={portfolio} />
+					<img alt="" src={portfolio} />
 					<h3>Portfolio</h3>
 				</section>
 				<section>
-					<img src={github} />
+					<img alt="" src={github} />
 					<h3>Github</h3>
 				</section>
 				<section>
-					<img src={codesandbox} />
+					<img alt="" src={codesandbox} />
 					<h3>CodeSandbox</h3>
 				</section>
 			</div>

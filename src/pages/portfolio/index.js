@@ -25,7 +25,7 @@ const IndexPage = () => (
 			<div className="project">
 				<div className="title-img">
 					<h2><a href="https://stupefied-knuth-2bd1f1.netlify.com/">Dota 2 API App</a></h2>
-					<a href="https://stupefied-knuth-2bd1f1.netlify.com/"><img src={dota2} /></a>
+					<a href="https://stupefied-knuth-2bd1f1.netlify.com/"><img alt="" src={dota2} /></a>
 				</div>
 
 				<div className="description">
@@ -45,7 +45,7 @@ const IndexPage = () => (
 			<div className="project">
 				<div className="title-img">
 					<h2><a href="https://github.com/iamBevan/raspbian-express-react">Ash Williams Escape Room</a></h2>
-					<a href="https://github.com/iamBevan/raspbian-express-react"><img src={awer} /></a>
+					<a href="https://github.com/iamBevan/raspbian-express-react"><img alt="" src={awer} /></a>
 				</div>
 
 				<div className="description">
@@ -62,7 +62,7 @@ const IndexPage = () => (
 			<div className="project">
 				<div className="title-img">
 					<h2><a href="https://gowergiantcleaning.co.uk">Gower Giant Cleaning</a></h2>
-					<a href="https://gowergiantcleaning.co.uk"><img src={ggc} /></a>
+					<a href="https://gowergiantcleaning.co.uk"><img alt="" src={ggc} /></a>
 				</div>
 
 				<div className="description">
@@ -78,7 +78,7 @@ const IndexPage = () => (
 			<div className="project">
 				<div className="title-img">
 					<h2><a href="https://www.kevinbevan.com">My Personal Site</a></h2>
-					<a href="https://www.kevinbevan.com"><img src={gatsbyIcon} /></a>
+					<a href="https://www.kevinbevan.com"><img alt="" src={gatsbyIcon} /></a>
 				</div>
 
 				<div className="description">
@@ -94,7 +94,7 @@ const IndexPage = () => (
 			<div className="project">
 				<div className="title-img">
 					<h2><a href="https://codesandbox.io/u/iamBevan/sandboxes">My CodeSandbox</a></h2>
-					<img src={codesandbox} />
+					<img alt="" src={codesandbox} />
 				</div>
 				<div className="description">
 

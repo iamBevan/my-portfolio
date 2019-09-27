@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 

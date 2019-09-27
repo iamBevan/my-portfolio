@@ -85,17 +85,19 @@
 
                 a:link {
                     text-decoration: none;
+                    color: #1d3e53;
+
                 }
-            
+
                 a:visited {
                     text-decoration: none;
-                    color: #4BC0EE;
+                    color: #1d3e53;
                 }
-            
+
                 a:hover {
                     text-decoration: underline;
                 }
-            
+
                 a:active {
                     text-decoration: underline;
                 }
@@ -106,7 +108,7 @@
                 text-align: justify;
             }
 
-            
+
         }
     }
 }
@@ -128,7 +130,7 @@
             }
 
             .description {
-                
+
                 p {
                     text-align: justify;
                 }
