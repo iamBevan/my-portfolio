@@ -85,7 +85,8 @@ const IndexPage = () => (
 
 					<span><a href="https://www.kevinbevan.com">kevinbevan.com</a></span>
 					<p>
-						Freelance project for a local cleaning company. Written in React and Typescript. The website is fully responsive with all artwork being custom made by me.
+						The website you are currently on was created with Gatsby and SASS; it's responsive and incredibly fast when using internal links. I've made use of GraphQL
+						and have reusable components for most things.
 					</p>
 
 				</div>
@@ -100,8 +101,8 @@ const IndexPage = () => (
 
 					<span><a href="https://codesandbox.io/u/iamBevan/sandboxes">CodeSandbox</a></span>
 					<p>
-						The website you are currently on was created with Gatsby and SASS; it's responsive and incredibly fast when using internal links. I've made use of GraphQL
-						and have reusable components for most things.
+						Check out my CodeSandbox, in which I have a lot of React components that aren't large 
+						enough to be included in my portfolio but still clearly demonstrate my ability with Javascript.
 					</p>
 
 				</div>
