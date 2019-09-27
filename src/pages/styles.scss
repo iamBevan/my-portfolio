@@ -33,6 +33,31 @@
         height: 100%;
         width: 20vw;
     }
+
+    .icons {
+        width: 640px;
+        display: flex;
+        margin: auto;
+
+        a:link {
+            text-decoration: none;
+            color: #fff;
+    
+        }
+    
+        a:visited {
+            text-decoration: none;
+            color: #fff;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    
+        a:active {
+            text-decoration: underline;
+        }
+    }
 }
 
 .home-container {
@@ -81,25 +106,6 @@
             width: 640px;
             display: flex;
             margin: auto;
-
-            a:link {
-                text-decoration: none;
-                color: #fff;
-        
-            }
-        
-            a:visited {
-                text-decoration: none;
-                color: #fff;
-            }
-        
-            a:hover {
-                text-decoration: underline;
-            }
-        
-            a:active {
-                text-decoration: underline;
-            }
             
             section {
                 width: 33%;
