@@ -35,9 +35,6 @@
     }
 
     .icons {
-        width: 640px;
-        display: flex;
-        margin: auto;
 
         a:link {
             text-decoration: none;
@@ -92,7 +89,8 @@
             margin: 65px 0 0 0;
             letter-spacing: 4px;
             font-weight: 400;
-            font-size: 50px;        }
+            font-size: 50px;        
+        }
     
         h2 {
             font-weight: 300;
@@ -103,8 +101,9 @@
         }
 
         .icons {
-            width: 640px;
+
             display: flex;
+            width: 640px;
             margin: auto;
             
             section {
