@@ -5,52 +5,44 @@ import './styles.scss';
 
 import OuterLayout from "../components/OuterLayout"
 import SEO from "../components/SEO"
-import Title from "../components/Title";
 
-import github from '../images/github.svg'
-import email from '../images/email.svg'
-import codesandbox from '../images/codesandbox.svg'
-
-const titleStyle = {
-	height: "330px",
-	background: "#1d3e53",
-	color: "#fff",
-    marginBottom: 50,
-	paddingTop: 120,
-	// borderTop: "2px solid rgba(0,0,0,.125)",
-	// borderBottom: "2px solid rgba(0,0,0,.125)",
-	textAlign: "center",
-	// fontFamily: "open sans"
-}
+import github from '../images/github-white.svg'
+import codesandbox from '../images/codesandbox-white.svg'
+import portfolio from '../images/code-white.svg'
 
 const IndexPage = () => (
 	<OuterLayout>
 		<SEO title="Home" />
-		<Title titleStyle={titleStyle}>
-			{/* <h1><span>&#123;</span>KB<span>&#125;</span></h1> */}
-			{/* <img src={kb} style={{ width: '100px', height: '100px' }} /> */}
+		<div className="home-title">
+			<div>&nbsp;</div>
 			<h1>Kevin Bevan</h1>
-			<div style={{ padding: "0px 0 0px 0", fontStyle: "italic", fontSize: "22px" }}>
-				Front-end Web Developer
+			<h2>Front-end Web Developer</h2>
+			<div className="icons">
+				<section>
+					<img src={portfolio} />
+					<h3>Portfolio</h3>
+				</section>
+				<section>
+					<img src={github} />
+					<h3>Github</h3>
+				</section>
+				<section>
+					<img src={codesandbox} />
+					<h3>CodeSandbox</h3>
+				</section>
 			</div>
-		</Title>
-		<div className="about-and-contact">
+		</div>
+		<div className="home-container">
 			<div className="about">
-				<h3>About me</h3>
+				<h2>About me</h2>
 				<p>
-					I am a junior front-end web developer concentrating on React
-					<br />Web development has allowed me to pursue all of my interests as can been seen from my growing portfolio.
-					<br />In addition to my portfolio please check out my Blog and Codesandbox.
-
+					I am a junior front-end web developer specializing in Typescript and React.
+					I have always had a passion for web design and problem solving - recently I have been able to explore this further with some freelance work
+					and am currently looking to expand my skill-set in a professional environment.
+					<br />
+					You can check out portfolio, blog or CodeSandbox to see my current progression.
 				</p>
-      		</div>
-			<div className="contact">
-				<h3>Contact</h3>
-				<img src={github} />
-				<p>Github</p>
-				<img src={email} />
-				<p>Email</p>
-      		</div>
+			</div>
 		</div>
 
 	</OuterLayout>

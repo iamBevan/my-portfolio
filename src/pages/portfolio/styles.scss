@@ -1,33 +1,144 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
-.project {
-    display: flex;
-    width: 670px;
-    margin: auto;
-    height: 400px;
+.portfolio-title {
+    background: #1d3e53;
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Montserrat';
+    padding: 0 20px 0 20px;
 
-    .project-image {
-        width: 30%;
-
-        img {
-            height: 190px;
-            width: 190px;
-        }
-        // background-color: salmon;
+    h1 {
+        margin: 0;
+        letter-spacing: 2px;
     }
 
-    .project-description {
-        
-        width: 70%;
-        // background-color: aqua;
-        padding: 0 0 0 25px;
-    
-        h2 {
-            font-family: 'Open Sans';
-            font-size: 28px;
-            line-height: 35px;
-            font-weight: 700
+    h2 {
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 0 0 30px 0;
+        font-style: italic;
+    }
+
+}
+
+.portfolio-container {
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: #1d3e53;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+
+    .project {
+        font-family: 'Montserrat';
+        padding: 0 20px 50px 20px;
+        text-align: center;
+
+        img {
+            height: 100%;
+            width: 65vw;
+        }
+
+        // background-color: salmon;
+
+        section {
+
+            h2 {
+                margin: 0;
+                font-size: 15px;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+
+            p {
+                text-align: justify;
+
+            }
+
+        }
+
+        .title-img {
+            h2 {
+                letter-spacing: 2px;
+            }
+        }
+
+        .description {
+            letter-spacing: 1px;
+
+            span {
+                letter-spacing: 2px;
+
+                a:link {
+                    text-decoration: none;
+                }
+            
+                a:visited {
+                    text-decoration: none;
+                    color: #4BC0EE;
+                }
+            
+                a:hover {
+                    text-decoration: underline;
+                }
+            
+                a:active {
+                    text-decoration: underline;
+                }
+            }
+
+            // width: 70%;
+            p {
+                text-align: justify;
+            }
+
+            
         }
     }
 }
+
+@media (min-width: 640px) {
+    .portfolio-container {
+        width: 640px;
+        margin: auto;
+
+        .project {
+
+            .title-img {
+
+                // width: 30%;
+                img {
+                    height: 100%;
+                    width: 200px;
+                }
+            }
+
+            .description {
+                
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1200px) {}

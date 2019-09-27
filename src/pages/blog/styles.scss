@@ -1,33 +1,79 @@
+.blog-title {
+    background: #1d3e53;
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Montserrat';
+
+    h1 {
+        margin: 0;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 0 0 30px 0;
+        font-style: italic;
+    }
+
+}
+
+
 .blog-post {
-  /* background-color: #ff0; */
-  color: #303841;
-  margin: 40px 0 40px 0px;
-  height: 100%;
-  font-family: Montserrat;
- }
- 
- .blog-date {
-   font-size: 1rem;
-   font-weight: 300;
- }
- 
- .blog-post-heading {
-   /* background-color: teal; */
-   font-size: 1.5rem;
-   padding: 15px 0 30px 0;
-   color: #303841;
-   
- }
- 
- .blog-post-text {
-   /* background-color: aquamarine; */
-   padding: 15px;
-   border-left: 5px solid #303841;
- }
- 
- .blog-link {
-   text-align: right;
-   /* background-color: blue; */
-   padding: 0 25px 0 0;
-   font-style: italic;
- }
+    color: #303841;
+    margin: 50px 10px 40px 10px;
+    height: 100%;
+    font-family: 'Montserrat';
+
+    span {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    h3 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 400;
+        padding: 6px 0 15px 0;
+        color: #1d3e53;
+    }
+    p {
+        padding: 15px;
+        border-left: 5px solid #1d3e53;
+    }
+
+    .blog-link {
+        text-align: right;
+        /* background-color: blue; */
+        padding: 0 25px 0 0;
+        font-style: italic;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        text-decoration: none;
+        color: #1d3e53;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    a:active {
+        text-decoration: underline;
+    }
+    
+}
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1200px) {}
