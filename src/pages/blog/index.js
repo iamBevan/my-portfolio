@@ -24,21 +24,21 @@ const IndexPage = () => (
 			<div className="blog-post">
 				<span>July 20, 2019</span>
 				<h3><Link to="/blog/BlogPost1">Dota API Project</Link></h3>
-				<p>Ongoing personal project using the <a href="https://docs.opendota.com/"><b>OpenDota API</b></a> - built with React and Typescript. Here are some snippets of the process so far and what I've learned.<br /><br />I will add to this blog as I add features to my app and expand my skillset. Stay tuned.</p>
+				<p>Ongoing personal project using the <a href="https://docs.opendota.com/"><b>OpenDota API</b></a> - built with React and Typescript. Here are some snippets of the process so far and what I've learned.</p>
 				<div className="blog-link"><Link to="/blog/BlogPost1">Read more...</Link></div>
 			</div>
 			<div className="blog-post">
 				<span>June 12, 2019</span>
 				<h3>Using Raspberry Pi with React</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>A look at how I set up a Node/Express backend that allows a user to operate a Raspberry Pi through a React app.</p>
 				<div className="blog-link"><Link to="/blog/BlogPost3">Read more...</Link></div>
 			</div>
-			<div className="blog-post">
+			{/* <div className="blog-post">
 				<span>Date</span>
 				<h3>React Router</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<div className="blog-link"><Link to="/">Read more...</Link></div>
-			</div>
+			</div> */}
 		</div>
 	</OuterLayout>
 )
