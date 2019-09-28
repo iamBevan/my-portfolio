@@ -9,6 +9,8 @@ import SEO from "../components/SEO"
 import github from '../images/github-white.svg'
 import codesandbox from '../images/codesandbox-white.svg'
 import portfolio from '../images/code-white.svg'
+import linkedin from '../images/linkedin-white.svg'
+import email from '../images/email-white.svg'
 
 const IndexPage = () => (
 	<OuterLayout>
@@ -25,18 +27,32 @@ const IndexPage = () => (
 					</Link>
 				</section>
 				
-					<section>
-						<a href="https://github.com/iamBevan/">
-							<img alt="" src={github} />
-							<h3>Github</h3>
-						</a>
-					</section>
+				<section>
+					<a href="https://github.com/iamBevan/">
+						<img alt="" src={github} />
+						<h3>Github</h3>
+					</a>
+				</section>
 				
 	
 				<section>
 					<a href="https://codesandbox.io/u/iamBevan/sandboxes">
 						<img alt="" src={codesandbox} />
-						<h3>CodeSandbox</h3>
+						<h3>Examples</h3>
+					</a>
+				</section>
+				
+				<section>
+					<a href="mailto:iambevan@gmail.com">
+						<img alt="" src={email} />
+						<h3>Email</h3>
+					</a>
+				</section>
+				
+				<section>
+					<a href="https://linkedin.com/in/kevin-bevan/">
+						<img alt="" src={linkedin} />
+						<h3>LinkedIn</h3>
 					</a>
 				</section>
 				
@@ -50,7 +66,7 @@ const IndexPage = () => (
 					I have always had a passion for web design and problem solving - recently I have been able to explore this further with some freelance work
 					and am currently looking to expand my skill-set in a professional environment.
 					<br />
-					You can check out portfolio, blog or CodeSandbox to see my current progression.
+					You can check out portfolio, blog or CodeSandbox examples to see my current progression.
 				</p>
 			</div>
 		</div>

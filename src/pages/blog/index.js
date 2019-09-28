@@ -29,7 +29,7 @@ const IndexPage = () => (
 			</div>
 			<div className="blog-post">
 				<span>June 12, 2019</span>
-				<h3>Using Raspberry Pi with React</h3>
+				<h3><Link to="/blog/BlogPost3">Using Raspberry Pi with React</Link></h3>
 				<p>A look at how I set up a Node/Express backend that allows a user to operate a Raspberry Pi through a React app.</p>
 				<div className="blog-link"><Link to="/blog/BlogPost3">Read more...</Link></div>
 			</div>
