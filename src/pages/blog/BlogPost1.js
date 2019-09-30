@@ -124,7 +124,7 @@ const BlogPost1 = () => (
                 Unit testing is essential in any project. It ensures all your code is working, will immediately alert you to any breaking changes,
                 and will serve as living documentation.
     
-                For this project I used <Link to="#"><b>Alsatian</b></Link>; a unit testing framework written in and fully supporting Typescript.
+                For this project I used <a href="https://github.com/alsatian-test/alsatian"><b>Alsatian</b></a>; a unit testing framework written in and fully supporting Typescript.
     
                 To start testing, I used the following setup:
     
