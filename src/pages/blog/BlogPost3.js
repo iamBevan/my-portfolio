@@ -6,25 +6,77 @@ import OuterLayout from "../../components/OuterLayout"
 import SEO from "../../components/SEO"
 import BlogPost from "../../components/BlogPost";
 
-const fileStructure = () => {
+const GPIO_Pins = () => {
     const codeString = `
-    ├── app.js
-    ├── bin
-    │   └── www
-    ├── package.json
-    ├── package-lock.json
-    ├── public
-    │   ├── images
-    │   ├── javascripts
-    │   └── stylesheets
-    │       └── style.css
-    ├── routes
-    │   ├── index.js
-    │   └── users.js
-    └── views
-        ├── error.jade
-        ├── index.jade
-    └── layout.jade
+    var express = require('express');
+    var router = express.Router();
+    
+    router.get('/on/:pin', function (req, res) {
+        gpioPin = req.params.pin;
+        gpio.close(gpioPin);
+        gpio.open(gpioPin, "output", function (err) {
+            gpio.write(gpioPin, 1, function () {
+                console.log('Pin ' + gpioPin + ' is now HIGH.');
+                res.sendStatus(200);
+            });
+        });
+    });
+    
+    router.get('/off/:pin', function (req, res) {
+        gpioPin = req.params.pin;
+        gpio.close(gpioPin);
+        gpio.open(gpioPin, "output", function (err) {
+            gpio.write(gpioPin, 0, function () {
+                console.log('Pin ' + gpioPin + ' is now LOW.');
+                res.sendStatus(200);
+            });
+        });
+    });
+    
+    module.exports = router;
+
+    `;
+    return (
+        <SyntaxHighlighter language="javascript" style={monokai}>
+            {codeString}
+        </SyntaxHighlighter>
+    );
+};
+
+const React_App = () => {
+    const codeString = `
+
+    import React from 'react';
+    import './App.css';
+    
+    class App extends React.Component {
+    
+        handleClickOn() {
+            fetch('/pins/on/7/')
+        }
+    
+        handleClickOff() {
+            fetch('/pins/off/7/')
+        }
+    
+        render() {
+            return ( 
+                <div className = "App">
+                    <h1> Toggle On/Off </h1>
+                    <button onClick={this.handleClickOn}>
+                        ON
+                    </button>
+                    <button onClick={this.handleClickOff}>
+                    OFF
+                    </button>
+                </div>
+            );
+        }
+    }
+    
+    export default App;
+    
+    module.exports = router;
 
     `;
     return (
@@ -37,34 +89,97 @@ const fileStructure = () => {
 
 const BlogPost3 = () => (
     <OuterLayout>
-        <BlogPost Title="Unit Testing with The Builder" Description="A quick look at The Builder Pattern and my implementation of it">
-            <SEO title="Builder Pattern" />
+        <BlogPost Title="Using Raspberry Pi with React" Description="A simple guide on how to the Raspberry PI GPIO Pins with React via a Node/Express backend.">
+            <SEO title="Raspberry Pi and React full-stack" />
 
             <p>
-                List of parts.
+                For this project I used a Raspberry Pi 3 Model B and a clean install of Raspbian (4.19).
             </p>
             <p>
-                Update and Upgrade Raspbian
+                You'll need your Pi hooked up to a monitor with a keyboard/mouse and an active internet connection.
             </p>
             <p>
-                Install latest version on node and explain how to get correct version for your CPU
-            </p>
-            <p>
-                Now the express set up
+                So firstly, install latest version of node on to your Pi. The Pi is equipped with an ARM CPU; all three of which are officially supported by Node and can be found on their <a href="https://nodejs.org/en/download/">download page. </a>
+                Just type
             </p>
             <pre>
                 <code>
-                    npm install -g express-generator
+                    uname -m
                 </code>
             </pre>
+            <p>
+                to determine which type you have - instead of downloading directly, right-click the link and <i>Copy link address</i>. Use the link down <samp>wget</samp> the .tar.xz. If
+                you have for example an ARMv7, type
+            </p>
             <pre>
                 <code>
-                    express react-backend
+                    wget https://nodejs.org/dist/v10.16.3/node-v10.16.3-linux-armv7l.tar.xz
                 </code>
             </pre>
+            <p>
+                Extract
+            </p>
             <pre>
                 <code>
-                    cd react-backend
+                    sudo apt-get install xz-utils
+                    <br /><br />
+                    tar -xf node-v10.16.3-linux-armv7l.tar.xz
+                </code>
+            </pre>
+            <p>
+                Copy Node to /usr/local
+            </p>
+            <pre>
+                <code>
+                    cd node-v10.16.3-linux-armv7l.tar.xz
+                    <br /><br />
+                    sudo cp -R * /usr/local/
+                </code>
+            </pre>
+            <p>
+                Then just check the versions.
+            </p>
+            <pre>
+                <code>
+                    node -v
+                    <br /><br />
+                    npm -v
+                    <br /><br />
+                    cd ..
+                </code>
+            </pre>
+            <p>
+                To keep the project as simple as possible for now, we'll be using <i>express-generator</i> and <i>create-react-app</i>.
+            </p>
+            <pre>
+                <code>
+                    sudo npm install -g express-generator
+                    <br /><br />
+                    express react-pi-express-stack
+                    <br /><br />
+                    cd react-pi-express-stack
+                    <br /><br />
+                    npm install
+                    <br /><br />
+                    npx create-react-app client
+                    <br />
+                </code>
+            </pre>
+            <p>
+                Before running them both, go to the <i>routes</i> folder in the project directory and rename <i>users.js</i> to <i>GPIO_Pins.js</i> and paste in the following
+            </p>
+            <p>
+                {GPIO_Pins()}
+            </p>
+            <p>
+                In the <i>client</i> folder open up App.js and give it the following
+            </p>
+            <p>
+                {React_App()}
+            </p>
+            <pre>
+                <code>
+                    npm install
                 </code>
             </pre>
             <pre>
@@ -72,8 +187,26 @@ const BlogPost3 = () => (
                     npm install
                 </code>
             </pre>
-
-            {fileStructure()}
+            <pre>
+                <code>
+                    npm install
+                </code>
+            </pre>
+            <pre>
+                <code>
+                    npm install
+                </code>
+            </pre>
+            <pre>
+                <code>
+                    npm install
+                </code>
+            </pre>
+            <pre>
+                <code>
+                    npm install
+                </code>
+            </pre>
 
         </BlogPost>
     </OuterLayout>
