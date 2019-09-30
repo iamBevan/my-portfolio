@@ -119,7 +119,7 @@ const BlogPost3 = () => (
                 </code>
             </pre>
             <p>
-                to determine which type you have - instead of downloading directly, right-click the link and <i>Copy link address</i>. Use the link down <samp>wget</samp> the .tar.xz. If
+                to determine which type you have - instead of downloading directly, right-click the link and <i>Copy link address</i>. Use the link down <i>wget</i> the .tar.xz. If
                 you have for example an ARMv7, type
             </p>
             <pre>
