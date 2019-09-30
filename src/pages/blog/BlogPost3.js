@@ -220,7 +220,9 @@ const BlogPost3 = () => (
                 </code>
             </pre>
             <p>
-                And that it! You can now access your Raspberry Pi's GPIO pins with an API request through React!
+                And that it! You can now access your Raspberry Pi's GPIO pins with an API request through React.
+                Simply run <samp>npm start</samp> 
+                from your <i>client</i> directory and <samp>PORT=3005 npm start</samp> from your project root.
             </p>
 
         </BlogPost>
