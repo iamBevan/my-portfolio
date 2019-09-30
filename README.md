@@ -1,11 +1,5 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-    # My Portfolio
-
-    ### Written in Gatsby
-</p>
+# My Portfolio
+### Written in Gatsby
 
 <img alt="Gatsby" src="https://i.imgur.com/X5qPg6w.png" />
 
