@@ -6,6 +6,21 @@ import OuterLayout from "../../components/OuterLayout"
 import SEO from "../../components/SEO"
 import BlogPost from "../../components/BlogPost";
 
+const addToAddJs = () => {
+    const codeString = `
+    var GPIO_PinsRouter = require('./routes/pins');
+    .
+    .
+    .
+    app.use('/GPIO_Pins', GPIO_PinsRouter);
+    `;
+    return (
+        <SyntaxHighlighter language="javascript" style={monokai}>
+            {codeString}
+        </SyntaxHighlighter>
+    );
+};
+
 const GPIO_Pins = () => {
     const codeString = `
     var express = require('express');
@@ -34,7 +49,6 @@ const GPIO_Pins = () => {
     });
     
     module.exports = router;
-
     `;
     return (
         <SyntaxHighlighter language="javascript" style={monokai}>
@@ -75,9 +89,6 @@ const React_App = () => {
     }
     
     export default App;
-    
-    module.exports = router;
-
     `;
     return (
         <SyntaxHighlighter language="javascript" style={monokai}>
@@ -172,41 +183,45 @@ const BlogPost3 = () => (
                 {GPIO_Pins()}
             </p>
             <p>
-                In the <i>client</i> folder open up App.js and give it the following
+                Then just add these two lines to your <i>app.js</i>
+            </p>
+            <p>
+                {addToAddJs()}
+            </p>
+            <p>
+                In the <i>client</i> folder open up App.js and change that too.
             </p>
             <p>
                 {React_App()}
             </p>
+            <p>
+                Finally we just need to change the permissions in Raspbian and install a package so that we can access the GPIO pins. From anywhere outside of your project directory 
+                
+            </p>
             <pre>
                 <code>
-                    npm install
+                    git clone git://github.com/quick2wire/quick2wire-gpio-admin.git
+                    <br /><br />
+                    cd quick2wire-gpio-admin
+                    <br /><br />
+                    make
+                    <br /><br />
+                    sudo make install
+                    <br /><br />
+                    sudo adduser $USER gpio
                 </code>
             </pre>
+            <p>
+                Go back to your project direction and add
+            </p>
             <pre>
                 <code>
-                    npm install
+                    npm install pi-gpio
                 </code>
             </pre>
-            <pre>
-                <code>
-                    npm install
-                </code>
-            </pre>
-            <pre>
-                <code>
-                    npm install
-                </code>
-            </pre>
-            <pre>
-                <code>
-                    npm install
-                </code>
-            </pre>
-            <pre>
-                <code>
-                    npm install
-                </code>
-            </pre>
+            <p>
+                And that it! You can now access your Raspberry Pi's GPIO pins with an API request through React!
+            </p>
 
         </BlogPost>
     </OuterLayout>
