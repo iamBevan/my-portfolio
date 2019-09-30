@@ -157,7 +157,8 @@ const BlogPost1 = () => (
             
             <p>
                 In this post I aim to just give a brief look at some of the choices I made when setting up my project, and to give some basic examples.
-                I will take a look at Unit Testing with builders and using React Router with Typescript in my next posts.
+                I will take a look at Unit Testing with builders and using React Router with Typescript in my next posts. Simply run <samp>npm start</samp> 
+                from your <i>client</i> directory and <samp>PORT=3005 npm start</samp> from your project root.
     
             </p>
 
