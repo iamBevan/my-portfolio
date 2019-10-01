@@ -77,8 +77,8 @@ const IndexPage = () => (
 
 			<div className="project">
 				<div className="title-img">
-					<h2><a href="https://www.kevinbevan.com">My Personal Site</a></h2>
-					<a href="https://www.kevinbevan.com"><img alt="" src={gatsbyIcon} /></a>
+					<h2><a href="https://github.com/iamBevan/my-portfolio">My Personal Site</a></h2>
+					<a href="https://github.com/iamBevan/my-portfolio"><img alt="" src={gatsbyIcon} /></a>
 				</div>
 
 				<div className="description">
