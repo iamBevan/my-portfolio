@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
+@import '../../variables';
+
 .portfolio-title {
-    background: #1d3e53;
+    background: $globalBlue;
     color: #fff;
     margin-bottom: 50px;
     text-align: center;
@@ -28,13 +30,13 @@
 
     a:link {
         text-decoration: none;
-        color: #1d3e53;
+        color: $globalBlue;
 
     }
 
     a:visited {
         text-decoration: none;
-        color: #1d3e53;
+        color: $globalBlue;
     }
 
     a:hover {

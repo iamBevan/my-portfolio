@@ -1,5 +1,7 @@
+@import '../../variables';
+
 .blog-title {
-    background: #1d3e53;
+    background: $globalBlue;
     color: #fff;
     margin-bottom: 50px;
     text-align: center;
@@ -37,11 +39,11 @@
         font-size: 22px;
         font-weight: 400;
         padding: 6px 0 15px 0;
-        color: #1d3e53;
+        color: $globalBlue;
     }
     p {
         padding: 15px;
-        border-left: 5px solid #1d3e53;
+        border-left: 5px solid $globalBlue;
     }
 
     .blog-link {
@@ -53,13 +55,13 @@
     
     a:link {
         text-decoration: none;
-        color: #1d3e53;
+        color: $globalBlue;
 
     }
     
     a:visited {
         text-decoration: none;
-        color: #1d3e53;
+        color: $globalBlue;
     }
     
     a:hover {

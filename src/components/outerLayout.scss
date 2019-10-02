@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
+@import '../variables';
+
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -36,7 +38,7 @@ body {
 
 	a {
 		float: left;
-		color: #1d3e53;
+		color: $globalBlue;
 		padding: 18px 5px 16px 5px;
 		font-size: 11px;
 		font-weight: 700;
@@ -45,14 +47,14 @@ body {
 		text-transform: uppercase;
 
 		&:hover {
-			background: #1d3e53;
+			background: $globalBlue;
 			color: #fff;
 			text-decoration: none;
 		}
 	}
 
 	a.active {
-		background-color: #1d3e53;
+		background-color: $globalBlue;
 		color: white;
 	}
 }
@@ -60,18 +62,18 @@ body {
 footer {
 	padding: 30px 0 0 20px;
 	height: 50px;
-	border-top: 1px solid #1d3e53;
+	border-top: 1px solid $globalBlue;
 	font-family: 'Montserrat';
 	
 	a:link {
 		text-decoration: none;
-		color: #1d3e53;
+		color: $globalBlue;
 
 	}
 
 	a:visited {
 		text-decoration: none;
-		color: #1d3e53;
+		color: $globalBlue;
 	}
 
 	a:hover {
@@ -122,7 +124,7 @@ a:link {
 
 a:visited {
 	text-decoration: none;
-	color: #1d3e53;
+	color: $globalBlue;
 }
 
 a:hover {
@@ -156,7 +158,7 @@ a:active {
 	
 		a {
 			float: left;
-			color: #1d3e53;
+			color: $globalBlue;
 			padding: 18px 15px 16px 15px;
 			font-size: 12px;
 			font-weight: 700;
@@ -165,14 +167,14 @@ a:active {
 			text-transform: uppercase;
 	
 			&:hover {
-				background: #1d3e53;
+				background: $globalBlue;
 				color: #fff;
 				text-decoration: none;
 			}
 		}
 	
 		a.active {
-			background-color: #1d3e53;
+			background-color: $globalBlue;
 			color: white;
 		}
 	}

@@ -1,5 +1,7 @@
+@import '../variables';
+
 .blog-title {
-    background: #1d3e53;
+    background: $globalBlue;
     color: #fff;
     margin-bottom: 50px;
     text-align: center;
