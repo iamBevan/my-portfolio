@@ -87,7 +87,24 @@ const IndexPage = () => (
 						<img src={dota2} alt="Avatar" className="project-image" />
 						<div className="project-overlay">
 							<div className="project-text">
-								Description
+								Ongoing projecting using
+								<ul>
+									<li>
+										React
+									</li>
+									<li>
+										Typescript
+									</li>
+									<li>
+										Unit Tests
+									</li>
+									<li>
+										React Semantic UI
+									</li>
+									<li>
+										React Router
+									</li>
+								</ul>
 								{/* A current project using the OpenDota API. The app is somewhat of a clone of two popular Dota 2 statistics sites, DotaBuff and OpenDota. You can navigate using the menu to check a player's statistics, past matches, heroes played and current rankings. */}
 							</div>
 						</div>
@@ -95,19 +112,25 @@ const IndexPage = () => (
 					<div className="project">
 						<img src={ggc} alt="Avatar" className="project-image" />
 						<div className="project-overlay">
-							<div className="project-text">Description</div>
+							<div className="project-text">
+								Freelance project for a local cleaning company. Written in React and Typescript. Fully responsive with custom artwork.
+							</div>
 						</div>
 					</div>
 					<div className="project">
 						<img src={awer} alt="Avatar" className="project-image" />
 						<div className="project-overlay">
-							<div className="project-text">Description</div>
+							<div className="project-text">
+								Freelance project in which I have written a full-stack using Node, Express, React and a Raspberry Pi. The React app allows an escape room player to test a password; should they guess correctly a physical lock is opened by the Pi via Express.
+							</div>
 						</div>
 					</div>
 					<div className="project">
 						<img src={gatsby} alt="Avatar" className="project-image" />
 						<div className="project-overlay">
-							<div className="project-text">Description</div>
+							<div className="project-text">
+								The website you are currently on was created with Gatsby and SASS; it's responsive and incredibly fast when using internal links. I've made use of GraphQL and have reusable components for most things.
+							</div>
 						</div>
 					</div>
 				</div>
