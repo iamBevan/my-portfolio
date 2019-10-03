@@ -24,13 +24,13 @@ const IndexPage = () => (
 
 			<div className="project">
 				<div className="title-img">
-					<h2><a href="https://stupefied-knuth-2bd1f1.netlify.com/">Dota 2 API App</a></h2>
-					<a href="https://stupefied-knuth-2bd1f1.netlify.com/"><img alt="" src={dota2} /></a>
+					<h2><a href="https://stupefied-knuth-2bd1f1.netlify.com/overview/87430370/">Dota 2 API App</a></h2>
+					<a href="https://stupefied-knuth-2bd1f1.netlify.com/overview/87430370/"><img alt="" src={dota2} /></a>
 				</div>
 
 				<div className="description">
 
-					<span><a href="https://stupefied-knuth-2bd1f1.netlify.com/">Netlify</a></span>
+					<span><a href="https://stupefied-knuth-2bd1f1.netlify.com/overview/87430370/">Netlify</a></span>
 					<p>
 						My ongoing project using the <a href="https://docs.opendota.com/"><b>OpenDota API</b></a>. The app is somewhat of a clone of two popular
 						Dota 2 statistics sites, <a href="https://www.dotabuff.com/"><b>DotaBuff</b></a> and <a href="https://www.opendota.com/players/87430370"><b>OpenDota</b></a>.

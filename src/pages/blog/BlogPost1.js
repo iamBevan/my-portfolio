@@ -57,7 +57,7 @@ const BlogPost1 = () => (
         <BlogPost Title="React Dota API Project" Description="React, Typescript, React Semantic UI, Alsatian, Axios">
             <SEO title="React Dota API Project" />
 
-            <h2><a href="https://stupefied-knuth-2bd1f1.netlify.com/">VIEW DESKTOP DEMO</a></h2>
+            <h2><a href="https://stupefied-knuth-2bd1f1.netlify.com/overview/87430370/">VIEW DESKTOP DEMO</a></h2>
 
             <p>
                 Dota 2 is a MOBA video game with one of the largest player-bases in the world.

@@ -115,7 +115,7 @@ const IndexPage = () => (
 									</li>
 								</ul>
 								{/* A current project using the OpenDota API. The app is somewhat of a clone of two popular Dota 2 statistics sites, DotaBuff and OpenDota. You can navigate using the menu to check a player's statistics, past matches, heroes played and current rankings. */}
-								<a href="https://stupefied-knuth-2bd1f1.netlify.com/" target="_blank">Demo</a>
+								<a href="https://stupefied-knuth-2bd1f1.netlify.com/overview/87430370" target="_blank">Demo</a>
 								<br />
 								<a href="https://github.com/iamBevan/dota-app-v2" target="_blank">Github</a>
 							</div>
@@ -139,7 +139,7 @@ const IndexPage = () => (
 						<div className="project-overlay">
 							<div className="project-text">
 								<p>Freelance project for a local escape room business. Full-stack using Node, Express, React and a Raspberry Pi. </p>
-								<a href="https://stupefied-knuth-2bd1f1.netlify.com/" target="_blank">Github</a>
+								<a href="https://github.com/iamBevan/raspbian-express-react" target="_blank">Github</a>
 							</div>
 						</div>
 					</div>
@@ -149,7 +149,7 @@ const IndexPage = () => (
 							<div className="project-text">
 								<p>This website is created with Gatsby; a static site framework based on React and powered by GraphQL.</p>
 								<br />
-								<a href="https://github.com/iamBevan/my-portfolio" target="_blank">Blog</a>
+								<a href="https://kevinbevan.com/blog" target="_blank">Blog</a>
 								<br />
 								<a href="https://github.com/iamBevan/my-portfolio" target="_blank">Github</a>
 							</div>
