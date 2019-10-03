@@ -11,8 +11,8 @@
     text-align: center;
     font-family: 'Montserrat';
     padding: 0 0 60px 0;
-    border-top: #132835 4px solid;
-    border-bottom: #132835 4px solid;
+    // border-top: #132835 4px solid;
+    // border-bottom: #132835 4px solid;
 
     // section {}
 
@@ -80,6 +80,25 @@
 
 
     .main-projects-container {
+
+        a:link {
+            text-decoration: none;
+            color: $globalBlue;
+    
+        }
+    
+        a:visited {
+            text-decoration: none;
+            color: $globalBlue;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    
+        a:active {
+            text-decoration: underline;
+        }
 
         .project {
             position: relative;
