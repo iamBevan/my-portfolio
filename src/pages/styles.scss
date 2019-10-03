@@ -53,7 +53,7 @@
 
         .icon-img {
             height: 100%;
-            width: 25%;
+            width: 12%;
         }
     }
 }
@@ -77,22 +77,22 @@
         width: inherit;
     }
 
-    
+
 
     .main-projects-container {
 
         .project {
             position: relative;
             width: 100%;
-          }
-          
-          .project-image {
+        }
+
+        .project-image {
             display: block;
             width: 100%;
             height: auto;
-          }
-          
-          .project-overlay {
+        }
+
+        .project-overlay {
             position: absolute;
             top: 0;
             bottom: 0;
@@ -103,15 +103,19 @@
             opacity: 0;
             transition: .5s ease;
             background-color: white;
-          }
-          
-          .project:hover .project-overlay {
+        }
+
+        .project:hover .project-overlay {
             opacity: 1;
-          }
-          
-          .project-text {
-            color: white;
-            font-size: 20px;
+        }
+
+        .project-text {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            color: black;
+            font-size: 16px;
+            letter-spacing: 2px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -119,7 +123,25 @@
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             text-align: center;
-          }
+            width: 100%;
+            height: inherit;
+
+            a {
+                font-weight: 700;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0 0 15px 0;
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 400;
+                }
+            }
+        }
     }
 }
 
@@ -146,6 +168,12 @@
             display: flex;
             width: 420px;
             margin: auto;
+
+            .icon-img {
+                // margin: 2%;
+                margin: 2%;
+                width: 10%;
+            }
         }
     }
 
@@ -176,15 +204,15 @@
                 width: 25%;
                 // background-color: salmon;
                 margin: auto;
-              }
-              
-              .project-image {
+            }
+
+            .project-image {
                 // display: block;
                 width: auto;
                 height: inherit;
-              }
-              
-              .project-overlay {
+            }
+
+            .project-overlay {
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -195,21 +223,21 @@
                 opacity: 0;
                 transition: .5s ease;
                 background-color: white;
-              }
-              
-              .project:hover .project-overlay {
+            }
+
+            .project:hover .project-overlay {
                 opacity: 0.9;
-              }
-              
-              .project:hover .project-image {
-                  
-              }
-              .project-text {
-                  text-align: center;
+            }
+
+            .project:hover .project-image {}
+
+            .project-text {
+                text-align: center;
                 font-family: 'Montserrat';
-                font-weight: 400;
+                font-weight: 300;
                 color: black;
-                font-size: 18px;
+                font-size: 16px;
+                letter-spacing: 2px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -220,10 +248,22 @@
                 width: 100%;
                 height: inherit;
 
+                a {
+                    font-weight: 700;
+                }
+
                 ul {
                     list-style: none;
+                    margin: 0;
+                    padding: 0 0 15px 0;
+
+                    li {
+                        margin: 0;
+                        padding: 0;
+                        font-weight: 400;
+                    }
                 }
-              }
+            }
         }
     }
 }

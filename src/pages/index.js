@@ -16,6 +16,9 @@ import awer from '../images/escape-room.svg';
 import ggc from '../images/ggc-name-logo.svg';
 import dota2 from '../images/dota-2-app.svg';
 import gatsby from '../images/gatsby.svg';
+import gatsbyWhite from '../images/gatsby-white.svg';
+import typescript from '../images/typescript-white.svg';
+import sass from '../images/sass-white.svg'
 
 import html from '../images/html5-white.svg';
 import css from '../images/css3-white.svg';
@@ -33,12 +36,16 @@ const IndexPage = () => (
 			<div>&nbsp;</div>
 			<img src={myPic} className="my-img" />
 			<h1>Kevin Bevan</h1>
-			<h2>Junior Front-end Web Developer</h2>
+			<h2>Front-end Web Developer</h2>
 			<div className="icons">
 				<img className="icon-img" alt="" src={html} />
 				<img className="icon-img" alt="" src={css} />
 				<img className="icon-img" alt="" src={js} />
 				<img className="icon-img" alt="" src={react} />
+				<img className="icon-img" alt="" src={gatsbyWhite} />
+				<img className="icon-img" alt="" src={typescript} />
+				<img className="icon-img" alt="" src={sass} />
+				
 			</div>
 			{/* <div className="icons">
 				<section>
@@ -87,7 +94,9 @@ const IndexPage = () => (
 						<img src={dota2} alt="Avatar" className="project-image" />
 						<div className="project-overlay">
 							<div className="project-text">
-								Ongoing projecting using
+								<p>
+									Ongoing projecting using
+								</p>
 								<ul>
 									<li>
 										React
@@ -99,13 +108,16 @@ const IndexPage = () => (
 										Unit Tests
 									</li>
 									<li>
-										React Semantic UI
+										RESTful API
 									</li>
 									<li>
-										React Router
+										React Semantic UI
 									</li>
 								</ul>
 								{/* A current project using the OpenDota API. The app is somewhat of a clone of two popular Dota 2 statistics sites, DotaBuff and OpenDota. You can navigate using the menu to check a player's statistics, past matches, heroes played and current rankings. */}
+								<a href="https://stupefied-knuth-2bd1f1.netlify.com/" target="_blank">Demo</a>
+								<br />
+								<a href="https://github.com/iamBevan/dota-app-v2" target="_blank">Github</a>
 							</div>
 						</div>
 					</div>
@@ -113,7 +125,12 @@ const IndexPage = () => (
 						<img src={ggc} alt="Avatar" className="project-image" />
 						<div className="project-overlay">
 							<div className="project-text">
-								Freelance project for a local cleaning company. Written in React and Typescript. Fully responsive with custom artwork.
+								<p>
+									Freelance project for a local cleaning company. Written in React and Typescript. Fully responsive with custom artwork.
+								</p>
+								<a href="https://gowergiantcleaning.co.uk" target="_blank">Website</a>
+								<br />
+								<a href="https://github.com/iamBevan/gower-giant-cleaning" target="_blank">Github</a>
 							</div>
 						</div>
 					</div>
@@ -121,7 +138,8 @@ const IndexPage = () => (
 						<img src={awer} alt="Avatar" className="project-image" />
 						<div className="project-overlay">
 							<div className="project-text">
-								Freelance project in which I have written a full-stack using Node, Express, React and a Raspberry Pi. The React app allows an escape room player to test a password; should they guess correctly a physical lock is opened by the Pi via Express.
+								<p>Freelance project for a local escape room business. Full-stack using Node, Express, React and a Raspberry Pi. </p>
+								<a href="https://stupefied-knuth-2bd1f1.netlify.com/" target="_blank">Github</a>
 							</div>
 						</div>
 					</div>
@@ -129,7 +147,11 @@ const IndexPage = () => (
 						<img src={gatsby} alt="Avatar" className="project-image" />
 						<div className="project-overlay">
 							<div className="project-text">
-								The website you are currently on was created with Gatsby and SASS; it's responsive and incredibly fast when using internal links. I've made use of GraphQL and have reusable components for most things.
+								<p>This website is created with Gatsby; a static site framework based on React and powered by GraphQL.</p>
+								<br />
+								<a href="https://github.com/iamBevan/my-portfolio" target="_blank">Blog</a>
+								<br />
+								<a href="https://github.com/iamBevan/my-portfolio" target="_blank">Github</a>
 							</div>
 						</div>
 					</div>
