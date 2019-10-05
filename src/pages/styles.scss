@@ -46,14 +46,15 @@
     }
 
     .icons {
+
         display: flex;
-        height: 70px;
-        width: 420px;
+        width: 320px;
         margin: auto;
 
         .icon-img {
-            height: 100%;
-            width: 12%;
+            // margin: 2%;
+            margin: 2%;
+            width: 10%;
         }
     }
 }
@@ -102,7 +103,8 @@
 
         .project {
             position: relative;
-            width: 100%;
+            width: 90%;
+            margin: auto;
         }
 
         .project-image {
