@@ -57,13 +57,13 @@ const BlogPost1 = () => (
         <BlogPost Title="React Dota API Project" Description="React, Typescript, React Semantic UI, Alsatian, Axios">
             <SEO title="React Dota API Project" />
 
-            <h2><a href="https://stupefied-knuth-2bd1f1.netlify.com/overview/87430370/">VIEW DESKTOP DEMO</a></h2>
+            <h2><a href="https://youthful-montalcini-270ca7.netlify.com/">VIEW DESKTOP DEMO</a></h2>
 
             <p>
                 Dota 2 is a MOBA video game with one of the largest player-bases in the world.
                 The game has over 100 characters - each with a hand-full of abilties, a list of evolving stats and an infinite
                 list of possible interactions. This provides a huge set of data to create an API project with React.
-    
+
                 I used the RESTful API and documentation written by OpenDota.
             </p>
 
@@ -122,11 +122,11 @@ const BlogPost1 = () => (
             <p>
                 Unit testing is essential in any project. It ensures all your code is working, will immediately alert you to any breaking changes,
                 and will serve as living documentation.
-    
+
                 For this project I used <a href="https://github.com/alsatian-test/alsatian"><b>Alsatian</b></a>; a unit testing framework written in and fully supporting Typescript.
-    
+
                 To start testing, I used the following setup:
-    
+
             </p>
 
             <br />
@@ -153,14 +153,14 @@ const BlogPost1 = () => (
                 Also worth mentioning is my CSS Framework of choice, <a href="https://react.semantic-ui.com/"><b>React Semantic UI </b></a>
                 - and <a href="https://github.com/axios/axios/"><b>Axios</b></a>, which I used to handle my API requests.
             </p>
-            
+
             <p>
                 In this post I aim to just give a brief look at some of the choices I made when setting up my project, and to give some basic examples.
                 I will take a look at Unit Testing with builders and using React Router with Typescript in my next posts.
             </p>
 
             <br />
-            
+
         </BlogPost>
     </OuterLayout>
 )
