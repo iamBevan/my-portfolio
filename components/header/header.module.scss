@@ -1,0 +1,19 @@
+.header {
+	padding: 20px 50px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto;
+
+	font-weight: 100;
+	line-height: 1.5;
+	font-size: 18px;
+	color: rgb(100, 100, 100);
+
+	.left {
+		font-weight: 400;
+	}
+	.projects {
+		font-weight: 400;
+	}
+}
