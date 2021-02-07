@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "generate-icons": "npx @svgr/cli -d components/icons/svgr assets/svg/ --ext=tsx"
   },
   "dependencies": {
     "next": "10.0.6",
