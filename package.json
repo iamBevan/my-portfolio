@@ -1,46 +1,58 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "gatsby": "^2.19.39",
-    "gatsby-image": "^2.2.43",
-    "gatsby-plugin-manifest": "^2.2.47",
-    "gatsby-plugin-offline": "^3.0.40",
-    "gatsby-plugin-react-helmet": "^3.1.7",
-    "gatsby-plugin-sass": "^2.1.30",
-    "gatsby-plugin-sharp": "^2.4.11",
-    "gatsby-source-filesystem": "^2.1.53",
-    "gatsby-transformer-sharp": "^2.3.17",
-    "node-sass": "^4.12.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-helmet": "^5.2.1",
-    "react-syntax-highlighter": "^12.2.1"
-  },
-  "devDependencies": {
-    "prettier": "^1.19.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+	"name": "accessible-react-components",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"test:watch": "jest --watch",
+		"generate-icons": "npx @svgr/cli -d components/icons/icons components/icons/svg --ext=tsx"
+	},
+	"dependencies": {
+		"@typescript-eslint/parser": "^4.15.2",
+		"next": "10.0.7",
+		"react": "17.0.1",
+		"react-dom": "17.0.1",
+		"react-use": "^17.1.1",
+		"styled-components": "^5.2.1"
+	},
+	"devDependencies": {
+		"@testing-library/dom": "^7.29.4",
+		"@testing-library/jest-dom": "^5.11.9",
+		"@testing-library/react": "^11.2.5",
+		"@testing-library/user-event": "^12.7.1",
+		"@types/jest": "^26.0.20",
+		"@types/node": "^14.14.28",
+		"@types/react": "^17.0.2",
+		"@types/styled-components": "^5.1.10",
+		"@typescript-eslint/eslint-plugin": "^4.15.2",
+		"babel-jest": "^26.6.3",
+		"eslint": "^7.20.0",
+		"eslint-config-prettier": "^8.1.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"husky": "=4",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^26.6.3",
+		"lint-staged": "^10.5.4",
+		"prettier": "^2.2.1",
+		"sass": "^1.32.8",
+		"stylelint": "^13.11.0",
+		"typescript": "^4.1.5"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{css}": "stylelint --fix --syntax=css",
+		"*.{scss}": "stylelint --fix --syntax=scss",
+		"*.{json,js,tsx,ts,yml,html}": "prettier --write",
+		"!(*.scss.d).{ts,tsx}": "eslint --fix --max-warnings=0"
+	}
 }
